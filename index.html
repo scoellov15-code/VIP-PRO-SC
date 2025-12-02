@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP PRO SC 2025 | Domina el Juego - 100% Indetectable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* BASE Y FUENTES */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0a0a0a; /* Fondo Oscuro */
+            color: #f0f0f0; /* Texto Blanco/Gris Claro */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-weight: 900;
+            text-align: center;
+            color: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ESTILO NEÓN/ACENTO */
+        .neon-text {
+            color: #00f0ff; /* Azul Neón */
+            text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px rgba(0, 240, 255, 0.5);
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding-top: 50px;
+        }
+
+        /* HEADER Y NAVEGACIÓN */
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+        nav a {
+            margin-left: 20px;
+            padding: 5px 10px;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        nav a:hover {
+            color: #00f0ff;
+            border-bottom: 2px solid #00f0ff;
+        }
+
+        /* BOTONES CTA (Call to Action) */
+        .cta-button {
+            display: inline-block;
+            background-color: #ff4d4d; /* Rojo Neón para CTA principal */
+            color: #0a0a0a;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #ff6666;
+            box-shadow: 0 0 15px #ff4d4d;
+            transform: scale(1.05);
+        }
+        .cta-header {
+            background-color: #00f0ff; /* Azul Neón para CTA fijo */
+            color: #0a0a0a;
+            padding: 8px 20px;
+        }
+        .cta-header:hover {
+            background-color: #33ffff;
+            box-shadow: 0 0 15px #00f0ff;
+        }
+
+        /* SECCIÓN HERO */
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://via.placeholder.com/1920x1080/000000/ffffff?text=Fondo+Gamer+HD') no-repeat center center/cover; /* Placeholder: Reemplazar con imagen gamer oscura */
+            padding-top: 60px; /* Espacio para el header fijo */
+        }
+        #hero h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 0 0 10px #ff4d4d; /* Sombra roja para impacto */
+        }
+        #hero h2 {
+            font-size: 1.5em;
+            color: #00f0ff;
+            text-shadow: 0 0 5px #00f0ff;
+            margin-bottom: 40px;
+        }
+
+        /* SECCIONES DE CONTENIDO */
+        section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+        #porque-elegirnos {
+            background-color: #1a1a1a;
+        }
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .feature-item {
+            width: 30%;
+            min-width: 250px;
+            margin: 20px 10px;
+            padding: 20px;
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.1);
+        }
+        .feature-item h3 {
+            color: #ff4d4d;
+            font-size: 1.3em;
+        }
+
+        /* FUNCIONES PREMIUM */
+        #funciones-premium ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        #funciones-premium li {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-left: 5px solid #00f0ff;
+            text-align: left;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        #funciones-premium li:hover {
+            background-color: #2a2a2a;
+            cursor: default;
+        }
+        #funciones-premium li strong {
+            color: #ff4d4d;
+        }
+
+        /* ELEGIR POTENCIA */
+        .tier-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .tier-card {
+            background-color: #1a1a1a;
+            border: 2px solid #333;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.2);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .tier-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff4d4d;
+        }
+        .tier-card h3 {
+            font-size: 2em;
+            color: #00f0ff;
+            margin-bottom: 20px;
+        }
+        .tier-card p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .tier-card .cta-button {
+            width: 100%;
+        }
+
+        /* ADVERTENCIA Y FOOTER */
+        #referencias {
+            background-color: #380000; /* Fondo de advertencia rojo oscuro */
+            color: #fff;
+            padding: 40px 5%;
+            font-weight: 700;
+        }
+        #referencias .attention-box {
+            background-color: #ff4d4d;
+            color: #0a0a0a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #000000;
+            color: #777;
+            padding: 30px 5%;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.5em;
+            }
+            .feature-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-item {
+                width: 80%;
+            }
+            .tier-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo neon-text">VIP PRO SC 2025</div>
+        <nav>
+            <a href="#funciones-premium">Funciones</a>
+            <a href="#porque-elegirnos">Compatibilidad</a>
+            <a href="#elige-potencia">Potencia</a>
+            <a href="https://wa.me/51979679324" class="cta-button cta-header" target="_blank">¡COMPRAR AHORA!</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>🚀 ¡NUEVA ACTUALIZACIÓN VIP PRO SC 2025! 🚀</h1>
+            <h2>Domina el juego como nunca antes. 100% SEGURO e INDETECTABLE.</h2>
+            <a href="https://wa.me/51979679324" class="cta-button" style="font-size: 1.5em;" target="_blank">ASEGURA TU VICTORIA HOY</a>
+        </section>
+
+        <section id="porque-elegirnos">
+            <h2 class="section-title">🎯 ¿POR QUÉ ELEGIR VIP PRO SC 2025?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3 class="neon-text">🛡️ SEGURIDAD INIGUALABLE</h3>
+                    <p>Juega con tranquilidad en tu cuenta principal. Ofrecemos <strong>Anti-Baneo</strong> y <strong>Anti-Reporte</strong> gracias a nuestra tecnología avanzada que no altera los códigos originales del juego.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 class="neon-text">🎮 COMPATIBILIDAD TOTAL</h3>
+                    <p>¡Disponible para **ANDROID, PC, y IPHONE**! No importa tu plataforma, tenemos la solución perfecta para llevar tu juego al siguiente nivel.</p>
+                </div>
+                <div class="feature-item">
+                    <h3 class="neon-text">⚡ RENDIMIENTO SIN RIESGOS</h3>
+                    <p>El VIP REGEDIT te da la ventaja que necesitas para asegurar la victoria en cada partida, sin poner en riesgo tu inversión de tiempo y dinero.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="funciones-premium">
+            <h2 class="section-title neon-text">🎯 FUNCIONES PREMIUM PARA LA VICTORIA</h2>
+            <ul>
+                <li><strong>¡CERO RETROCESOS! (NO RECOIL %):</strong> Dispara con precisión milimétrica.</li>
+                <li><strong>PUNTERÍA ASISTIDA (AIM FOV % y AIM BOT %):</strong> Mejora tu puntería y no falles un solo tiro.</li>
+                <li><strong>ASISTENCIA DE MIRA Y DISPARO:</strong> Optimiza cada movimiento y cada bala.</li>
+                <li><strong>APUNTADO AUTOMÁTICO (AUTO APUNTADO %):</strong> Reacciona más rápido que tus oponentes.</li>
+                <li><strong>SENSIBILIDAD PERSONALIZADA:</strong> Ajusta tu configuración para un rendimiento óptimo.</li>
+                <li><strong>HEADSHOTS IMPARABLES (HEADTRICK %):</strong> Aumenta drásticamente tus disparos a la cabeza.</li>
+            </ul>
+        </section>
+
+        <section id="elige-potencia">
+            <h2 class="section-title">¡ELIGE TU POTENCIA!</h2>
+            <p>Selecciona el nivel de rendimiento que mejor se adapte a tu estilo de juego en cada plataforma:</p>
+            
+            <div class="tier-grid">
+                <div class="tier-card">
+                    <h3>Versión 60%</h3>
+                    <p>Ideal para un juego discreto, pero con ventaja decisiva.</p>
+                    <a href="https://wa.me/51979679324" class="cta-button" target="_blank">Elegir 60%</a>
+                </div>
+                <div class="tier-card">
+                    <h3>Versión 70% <span class="neon-text">(Recomendado)</span></h3>
+                    <p>El balance perfecto entre potencia y discreción para el juego diario.</p>
+                    <a href="https://wa.me/51979679324" class="cta-button" target="_blank">Elegir 70%</a>
+                </div>
+                <div class="tier-card">
+                    <h3>Versión 80%</h3>
+                    <p>Potencia extrema para dominar lobbies y alcanzar el TOP global.</p>
+                    <a href="https://wa.me/51979679324" class="cta-button" target="_blank">Elegir 80%</a>
+                </div>
+            </div>
+            <p style="margin-top: 30px; color: #777;">Disponible para Android, iPhone y PC en todas las potencias.</p>
+        </section>
+
+        <section id="referencias">
+            <h2 class="section-title" style="color: #0a0a0a;">🌟 ¡EVITA ESTAFAS! 🌟</h2>
+            <div class="attention-box">
+                <p style="font-size: 1.3em;">🚨 **ATENCIÓN:** El único número autorizado para ventas y referencias actualizadas de 2025 es:</p>
+                <p style="font-size: 1.5em; font-weight: 900; margin: 15px 0;">+51 979 679 324</p>
+            </div>
+            <a href="https://wa.me/51979679324" class="cta-button" style="background-color: #00f0ff; color: #0a0a0a; font-size: 1.5em;" target="_blank">
+                SOLICITA REFERENCIAS Y COMPRA EL AUTÉNTICO VIP PRO SC 2025
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>VIP PRO SC 2025 | Todos los derechos reservados.</p>
+        <p>Aviso: Producto digital. Las ventas se realizan únicamente a través de WhatsApp para garantizar autenticidad.</p>
+    </footer>
+
+</body>
+</html>
